@@ -20,8 +20,6 @@ var server = http.createServer(function (request, response) {
             response.write('<h1>' + String(funcoes.fibonacci(parametro.a)) + '</h1>');
             break;
         case "/mediana?" + q[1]:
-            console.log("valor de q[1]: " + q[1]);
-            console.log("valor de parametro.a: " + parametro.a);
             response.write('<h1>' + String(funcoes.mediana(parametro.a)) + '</h1>');
             break;  
         default:
